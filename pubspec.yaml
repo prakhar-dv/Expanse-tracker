@@ -1,0 +1,41 @@
+name: expense_tracker
+description: A simple Expense Tracker app with WebView and AdMob ads
+publish_to: 'none' # Play Store ke liye rakho, pub.dev pe nahi
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # WebView ke liye
+  webview_flutter: ^4.7.0
+
+  # AdMob ke liye
+  google_mobile_ads: ^3.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+  # Launcher icons ke liye
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+  # Assets (agar images use karni ho future me)
+  assets:
+    - assets/
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.png"   # 👈 yaha tum apna logo dalna
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/logo.png"

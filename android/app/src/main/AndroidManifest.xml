@@ -1,7 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.prakhar.expensetracker"> <!-- 👈 Tumhara package name -->
+    package="com.prakhar.expensetracker">
 
-    <!-- Internet permission -->
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
@@ -9,7 +8,7 @@
         android:label="Expense Tracker"
         android:icon="@mipmap/ic_launcher">
 
-        <!-- ✅ Yaha App ID daali (AdMob integration ke liye zaruri) -->
+        <!-- AdMob App ID -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-2273231841018440~6092525155"/>
@@ -30,6 +29,7 @@
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+
         </activity>
 
     </application>
